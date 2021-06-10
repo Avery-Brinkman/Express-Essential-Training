@@ -5,7 +5,8 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send(`a GET request with / route on port ${PORT}`);
+    // get data first (Ex: from a MongoDB. Here it's from /data/data.json)
+    res.json(data);
 });
 
 app.post('/newItem', (req, res) => {
