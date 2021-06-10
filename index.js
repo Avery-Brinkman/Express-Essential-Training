@@ -34,8 +34,9 @@ app.post('/newItem', (req, res) => {
     res.send(`a POST request with /newItem route on port ${PORT}`);
 });
 
-app.put('/item', (req, res) => {
-    res.send(`a PUT request with /item route on port ${PORT}`);
+app.get('/item', (req, res) => {
+    res.end();
+    // res.send(`a PUT request with /item route on port ${PORT}`);
 });
 
 app.delete('/item', (req, res) => {
