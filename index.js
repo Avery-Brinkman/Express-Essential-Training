@@ -15,6 +15,14 @@ app.get('/', (req, res) => {
     res.json(data);
 });
 
+app.get('/item/:id', (req, res) => {
+    console.log(req.params.id);
+    const user = Number(req.params.id);
+    console.log(user);
+    console.log(data[user]);
+    res.send(data[user]);
+});
+
 app.post('/newItem', (req, res) => {
     res.send(`a POST request with /newItem route on port ${PORT}`);
 });
@@ -29,5 +37,5 @@ app.delete('/item', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-    console.log(data);
+    // console.log(data);
 });
