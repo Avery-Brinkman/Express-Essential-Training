@@ -1,0 +1,31 @@
+{
+    "name": "express-essential-training",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon ./index.js --exec babel-node -e js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Avery-Brinkman/Express-Essential-Training.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Avery-Brinkman/Express-Essential-Training/issues"
+    },
+    "homepage": "https://github.com/Avery-Brinkman/Express-Essential-Training#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.7"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-0": "^6.24.1",
+        "eslint": "^7.28.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.23.4"
+    }
+}
