@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "debug": "set DEBUG=express:* & nodemon ./index.js --exec babel-node -e js",
         "start": "nodemon ./index.js --exec babel-node -e js"
     },
     "repository": {
@@ -18,7 +19,8 @@
     "homepage": "https://github.com/Avery-Brinkman/Express-Essential-Training#readme",
     "dependencies": {
         "express": "^4.17.1",
-        "nodemon": "^2.0.7"
+        "nodemon": "^2.0.7",
+        "serve-favicon": "^2.5.0"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
